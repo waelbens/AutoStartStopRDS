@@ -1,5 +1,3 @@
-# lambda function which start Jenkins instance
-
 resource "aws_lambda_function" "rds-lambda-stop-start" {
   filename         = "../functions/rds-lambda-stop-start.zip"
   function_name    = "rds-lambda-stop-start"
