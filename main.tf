@@ -1,5 +1,5 @@
 resource "aws_lambda_function" "rds-lambda-stop-start" {
-  filename         = "../functions/rds-lambda-stop-start.zip"
+  filename         = "functions/rds-lambda-stop-start.zip"
   function_name    = "rds-lambda-stop-start"
   role             = "${aws_iam_role.LambdaRDSManagement.arn}"
   handler          = "index.handler"
